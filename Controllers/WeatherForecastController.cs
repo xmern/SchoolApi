@@ -12,10 +12,18 @@ namespace SchoolApi.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        public IConfiguration _configuration;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
+        }
+
+        [HttpGet("getDBConnectionString")]
+        public ActionResult ConnString() {
+
+            return Ok(_configuration.GetConnectionString("DefaultConnection"));
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
