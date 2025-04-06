@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\authentication\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|c:\\users\\presley\\documents\\dotnetprojects\\schoolbackend\\schoolapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5EB8B047-EB2F-4E86-A473-7CA1FFF14BE6}|SchoolApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Authentication\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Authentication\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Authentication\\LoginDto.cs",
+              "RelativeToolTip": "Authentication\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T04:26:48.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T04:17:22.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Authentication\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "Authentication\\RegisterUserDto.cs",
@@ -50,12 +84,11 @@
               "RelativeToolTip": "Authentication\\RegisterUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:26:16.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T05:26:16.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Authentication\\AppUser.cs",
               "RelativeDocumentMoniker": "Authentication\\AppUser.cs",
@@ -63,8 +96,7 @@
               "RelativeToolTip": "Authentication\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:22:17.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T05:22:17.49Z"
             },
             {
               "$type": "Document",
@@ -74,27 +106,27 @@
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA3wB4AAACFAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAYwBIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T03:11:00.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwG4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T03:02:27.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ClassRoom.cs",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Models\\ClassRoom.cs",
               "RelativeDocumentMoniker": "Models\\ClassRoom.cs",
@@ -106,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AppRoles.cs",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\Authentication\\AppRoles.cs",
               "RelativeDocumentMoniker": "Authentication\\AppRoles.cs",
@@ -118,15 +150,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Presley\\Documents\\DotnetProjects\\SchoolBackend\\SchoolApi\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T23:51:05.245Z"
+              "WhenOpened": "2025-03-31T23:51:05.245Z",
+              "EditorCaption": ""
             }
           ]
         }

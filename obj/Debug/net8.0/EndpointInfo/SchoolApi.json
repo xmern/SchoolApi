@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/register-student": {
+    "/Account/register-student": {
       "post": {
         "tags": [
           "Account"
@@ -36,7 +36,7 @@
         }
       }
     },
-    "/register-teacher": {
+    "/Account/register-teacher": {
       "post": {
         "tags": [
           "Account"
@@ -67,7 +67,7 @@
         }
       }
     },
-    "/register-admin": {
+    "/Account/register-admin": {
       "post": {
         "tags": [
           "Account"
@@ -98,7 +98,7 @@
         }
       }
     },
-    "/login": {
+    "/Account/login": {
       "post": {
         "tags": [
           "Account"
