@@ -149,7 +149,7 @@ namespace SchoolApi.Controllers
                     }
                 }
                 // If the user is not found, display an error message
-                ModelState.AddModelError("", "Invalid email or password");
+                ModelState.AddModelError("errors", "Invalid email or password");
             }
             return BadRequest(ModelState);
         }

@@ -56,7 +56,25 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
+    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    {
+        policy.WithOrigins("http://192.168.0.143:4200");
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+        policy.AllowCredentials();
+    });
+
 });
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+//    {
+//        policy.WithOrigins("http://192.168.0.143:4200");
+//        policy.AllowAnyHeader();
+//        policy.AllowAnyMethod();
+//        policy.AllowCredentials();
+//    });
+//});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -108,7 +126,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 // Use the CORS policy
-app.UseCors("AllowAngularDevClient");
+//app.UseCors("AllowAngularDevClient");
+app.UseCors("AllowNetworkAngularDevClient");
 
 app.MapControllers();
 
