@@ -1,16 +1,23 @@
 using System.Text;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using SchoolApi.Authentication;
+using SchoolApi.ContextClasses;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 builder.Services.AddDbContext<AppDbContext>();
+builder.Services.AddDbContext<SchoolDbContext>();
 builder.Services.AddIdentityCore<AppUser>(options =>
 {
     options.Password.RequireDigit = false;             // Don't require digits
@@ -56,13 +63,13 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
-    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
-    {
-        policy.WithOrigins("http://192.168.0.143:4200");
-        policy.AllowAnyHeader();
-        policy.AllowAnyMethod();
-        policy.AllowCredentials();
-    });
+    //options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    //{
+    //    policy.WithOrigins("http://192.168.0.143:4200");
+    //    policy.AllowAnyHeader();
+    //    policy.AllowAnyMethod();
+    //    policy.AllowCredentials();
+    //});
 
 });
 //builder.Services.AddCors(options =>
