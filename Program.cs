@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using SchoolApi.Authentication;
 using SchoolApi.ContextClasses;
+using SchoolApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -62,14 +63,21 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
+    }); 
+    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    {
+        policy.WithOrigins("http://192.168.0.143:4200");
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+        policy.AllowCredentials();
     });
-    //options.AddPolicy("AllowNetworkAngularDevClient", policy =>
-    //{
-    //    policy.WithOrigins("http://192.168.0.143:4200");
-    //    policy.AllowAnyHeader();
-    //    policy.AllowAnyMethod();
-    //    policy.AllowCredentials();
-    //});
+    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    {
+        policy.WithOrigins("http://192.168.253.147:4200");
+        policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+        policy.AllowCredentials();
+    });
 
 });
 //builder.Services.AddCors(options =>
@@ -85,6 +93,8 @@ builder.Services.AddCors(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//adding my services
+builder.Services.AddScoped<SchoolDataService>();
 
 
 var app = builder.Build();
