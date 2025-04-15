@@ -66,18 +66,18 @@ builder.Services.AddCors(options =>
     }); 
     options.AddPolicy("AllowNetworkAngularDevClient", policy =>
     {
-        policy.WithOrigins("http://192.168.0.143:4200");
-        policy.AllowAnyHeader();
-        policy.AllowAnyMethod();
-        policy.AllowCredentials();
-    });
-    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
-    {
         policy.WithOrigins("http://192.168.253.147:4200");
         policy.AllowAnyHeader();
         policy.AllowAnyMethod();
         policy.AllowCredentials();
     });
+    //options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    //{
+    //    policy.WithOrigins("http://192.168.253.147:4200");
+    //    policy.AllowAnyHeader();
+    //    policy.AllowAnyMethod();
+    //    policy.AllowCredentials();
+    //});
 
 });
 //builder.Services.AddCors(options =>

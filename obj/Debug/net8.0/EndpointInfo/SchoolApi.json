@@ -296,7 +296,8 @@
       "ClassRoom": {
         "required": [
           "class",
-          "name"
+          "name",
+          "teacherId"
         ],
         "type": "object",
         "properties": {
@@ -314,6 +315,10 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "teacherId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false

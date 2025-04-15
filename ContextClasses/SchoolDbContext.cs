@@ -8,6 +8,10 @@ namespace SchoolApi.ContextClasses
     {
         public DbSet<Class> Classes => Set<Class>();
         public DbSet<ClassRoom> ClassRooms => Set<ClassRoom>();
+        public DbSet<ResultSheet> ResultSheets => Set<ResultSheet>();
+        public DbSet<Subject> Subjects => Set<Subject>();
+        public DbSet<SubjectRecord> SubjectRecords => Set<SubjectRecord>();
+        public DbSet<StudentClassRecord> studentClassRecords => Set<StudentClassRecord>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
