@@ -73,7 +73,7 @@ namespace SchoolApi.Controllers
             }
             return BadRequest(ModelState);
         }
-        [Authorize(Roles = AppRoles.Administrator)]
+        //[Authorize(Roles = AppRoles.Administrator)]
         [HttpPost("register-admin")]
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterUserDto model)
         {
@@ -89,7 +89,7 @@ namespace SchoolApi.Controllers
             var user = new AppUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName };
 
             var result = await userManager.CreateAsync(user, model.Password);
-            var roleResult = await userManager.AddToRoleAsync(user, AppRoles.Teacher);
+            var roleResult = await userManager.AddToRoleAsync(user, AppRoles.Administrator);
             if (result.Succeeded && roleResult.Succeeded)
             {
                 var token = GenerateTokenAsync(model.Email, user);

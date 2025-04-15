@@ -62,15 +62,17 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
-              .AllowAnyMethod();
+              .AllowAnyMethod()
+              .AllowCredentials();
+        
     }); 
-    options.AddPolicy("AllowNetworkAngularDevClient", policy =>
-    {
-        policy.WithOrigins("http://192.168.253.147:4200");
-        policy.AllowAnyHeader();
-        policy.AllowAnyMethod();
-        policy.AllowCredentials();
-    });
+    //options.AddPolicy("AllowNetworkAngularDevClient", policy =>
+    //{
+    //    policy.WithOrigins("http://192.168.253.147:4200");
+    //    policy.AllowAnyHeader();
+    //    policy.AllowAnyMethod();
+    //    policy.AllowCredentials();
+    //});
     //options.AddPolicy("AllowNetworkAngularDevClient", policy =>
     //{
     //    policy.WithOrigins("http://192.168.253.147:4200");
@@ -143,8 +145,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 // Use the CORS policy
-//app.UseCors("AllowAngularDevClient");
-app.UseCors("AllowNetworkAngularDevClient");
+app.UseCors("AllowAngularDevClient");
+//app.UseCors("AllowNetworkAngularDevClient");
 
 app.MapControllers();
 
