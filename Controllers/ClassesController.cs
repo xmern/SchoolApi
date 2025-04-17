@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SchoolApi.ContextClasses;
 using SchoolApi.Models;
+using SchoolApi.Models.DTOs;
 using SchoolApi.Services;
 
 namespace SchoolApi.Controllers
@@ -17,7 +18,7 @@ namespace SchoolApi.Controllers
             _context = context;
         }
         [HttpGet("Get-all-classes")]
-        public async Task<ActionResult<IEnumerable<Class>>> GetAllClasses()
+        public async Task<ActionResult<IEnumerable<GetClassesDto>>> GetAllClasses()
         {
             if (_context.Classes == null)
             {

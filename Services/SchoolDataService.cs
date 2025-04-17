@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SchoolApi.ContextClasses;
 using SchoolApi.Models;
+using SchoolApi.Models.DTOs;
 
 namespace SchoolApi.Services
 {
@@ -11,9 +12,16 @@ namespace SchoolApi.Services
         public SchoolDataService(SchoolDbContext context) {
             _context = context;
         }
-        public async Task<ActionResult<IEnumerable<Class>>> GetAllClasses()
+        public async Task<ActionResult<IEnumerable<GetClassesDto>>> GetAllClasses()
         {
-            return await _context.Classes.ToListAsync();
+            var classes = await _context.Classes
+                    .Select(c => new GetClassesDto
+                        {
+                            Id = c.Id,
+                            Name = c.Name
+                        })
+                        .ToListAsync();
+            return classes;
         }
         public async Task CreateClass(Class clas){
             _context.Classes.Add(clas);
